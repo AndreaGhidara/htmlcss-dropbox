@@ -1,0 +1,120 @@
+/************************
+        General Rule
+************************/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;     
+}
+
+ul{
+    list-style: none;
+    display:flex ;
+}
+
+li{
+    padding: 10px;
+}
+
+:root{
+    --primaryBtn:#0061ff;
+    --bgHeader:#b4d0e7;
+}
+
+/************************
+        Utility
+************************/
+
+
+
+
+
+/************************
+        Header
+************************/
+.container{
+    width: 100%;
+    max-height: 700px;
+    background-color: var(--bgHeader);
+    display: flex;
+    flex-direction: column;
+}
+/* TOP */
+.top{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.7em;
+}
+/* Left */
+.left{
+    display: flex;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.logoIcon{
+    width: 100px;
+}
+/* Right */
+.right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.start{
+    padding: 0.5em 1.4em;
+    border:1px solid blue;
+    background-color: var(--primaryBtn);
+    color: white;
+}
+/* BOTTOM */
+.bottom{
+    width: 1050px;
+    margin:100px auto 0px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom h1{
+    font-size: 63px;
+    font-weight: 700;
+}
+/* Text and img area */
+.textAndImg{
+    margin-top: 70px;
+    display: flex;
+}
+
+.textArea{
+    display: flex;
+    flex-direction: column;
+}
+
+.text{
+    font-size: 17px;
+}
+
+.jumboImg{
+    width: 790px;
+}
+
+.btnTextArea{
+    padding: 0.5em 1.4em;
+    border:1px solid blue;
+    background-color: var(--primaryBtn);
+    color: white;
+    margin: 1em 0px;
+}
+
+.icon{
+    margin: 1em 0px;
+    font-size: 40px;
+}
