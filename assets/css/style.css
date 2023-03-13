@@ -25,9 +25,31 @@ li{
 /************************
         Utility
 ************************/
+.hero{
+    width: 1000px;
+    margin:10em auto;
+}
 
+.spaceLeft{
+    padding-left: 1em;
+}
 
+.primaryCl{
+    color: #0061ff;
+}
 
+.spaceBottom{
+    margin-bottom: 1em;
+}
+
+.softText{
+    color: gray;
+    margin: 0.4em 0px;
+}
+
+.servize{
+    margin-top:2em;
+}
 
 
 /************************
@@ -117,4 +139,90 @@ li{
 .icon{
     margin: 1em 0px;
     font-size: 40px;
+}
+
+/************************
+        Main
+************************/
+
+/* select piano */
+#billYear{
+    margin-left: 1.5em;
+}
+
+.selectrBusines{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.inputBusines{
+    margin:2em 0px;
+    display: flex;
+}
+
+.listBusines{
+    display: flex;
+    justify-content: space-between;
+}
+
+.col{
+    width: calc(100% / 3 - 50px);
+    border:1px solid grey;
+}
+
+.tag{
+    border: 1px solid grey;
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+}
+
+.boxed{
+    padding: 30px;
+    
+}
+
+.littleTitle{
+    font-size: 28px;
+}
+
+.specifications{
+    padding: 0.8em  0px;
+}
+
+.iconService{
+    padding-right: 0.5em;
+}
+
+.btnFreeTrial{
+    width: 100%;
+    background-color: #0061ff;
+    color: white;
+    padding: 1em;
+    margin: 2em 0px;
+}
+
+.pointSalt{
+    margin-top: 2em;
+    font-size: 17;
+    margin-bottom: 1em;
+}
+
+.advantages{
+    padding: 1em 0px;
+}
+/* Team piano */
+.teamCategory{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border: 1px solid lightgray;
+    margin: 3em 0px 2em;
+}
+
+.iconTeamCategory{
+    margin: 1em;
+    padding: 0.1em;
+    
 }
