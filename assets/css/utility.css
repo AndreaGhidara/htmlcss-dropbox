@@ -192,3 +192,8 @@
 .fW700{
     font-weight: 700;
 }
+/* color */
+
+.invertColor{
+    filter: invert();
+}

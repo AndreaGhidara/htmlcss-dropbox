@@ -19,6 +19,15 @@ ul{
 body{
     position: relative;
 }
+header{
+    position: sticky;
+    top: 0;
+}
+header a{
+    text-decoration: none;
+    color: #0061ff;
+}
+
 :root{
     --primaryBtn:#0061ff;
     --bgHeader:#b4d0e7;
@@ -72,11 +81,15 @@ body{
 }
 
 .white{
-    color: white;
+    color: #ffffff;
 }
 
 .black{
     color: #000;
+}
+
+.textRed{
+    color: #61082b;
 }
 
 .darkMode{
@@ -103,6 +116,20 @@ body{
     display: none;
 }
 
+.scale:hover{
+    animation: rotation 1s linear infinite;
+    box-shadow: 3.5px 13.5px 32px -11px #0061ff;
+}
+
+@keyframes rotation {
+    0%   {transform: rotate(0deg);}
+    20%  {transform: rotate(35deg);}
+    40%  {transform: rotate(90deg);}
+    60%  {transform: rotate(150deg);}
+    80%  {transform: rotate(270deg);}
+    100%  {transform: rotate(357deg);}
+}
+
 /************************
         Header
 ************************/
@@ -115,9 +142,6 @@ body{
 .navbar{
     background-color: white;
     padding:0px 0.7em;
-    position: sticky;
-    top: 0;
-    left: 0;
     box-shadow: -1.5px 10.5px 16px -9px #737070;
 }
 
@@ -135,6 +159,33 @@ body{
 
 .logoIcon{
     width: 100px;
+}
+
+.drop:hover .dropMenu{
+    display: block;
+}
+
+.dropMenu{
+    text-align: center;
+    color: #000;
+    opacity: 0.8;
+    border-radius: 10px;
+}
+
+.dropItem{
+    padding: 1rem 0;
+    color: #0093ce;
+    border-radius: 10px;
+}
+
+.dropMenu a:hover{
+    font-size: 20px;
+}
+
+.absolute{
+    position: absolute;
+    background: white;
+    width: 7em;
 }
 
 /* jumbotron */
@@ -278,7 +329,9 @@ body{
 
 .squereBigmidle{
     width: calc(100% / 3);
+    max-height: 30vw;
     padding: 50px;
+    overflow-y:scroll;
 }
 
 
@@ -317,6 +370,12 @@ body{
 
 .containerFoter .boxedFooter ul li{
     padding: 0.3rem 0px;
+}
+
+.containerFoter .boxedFooter ul li:hover{
+    color: #0061ff;
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 /* parte bassa */
