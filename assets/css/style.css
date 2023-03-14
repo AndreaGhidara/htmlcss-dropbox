@@ -16,6 +16,9 @@ ul{
     list-style: none;
 }
 
+body{
+    position: relative;
+}
 :root{
     --primaryBtn:#0061ff;
     --bgHeader:#b4d0e7;
@@ -96,6 +99,10 @@ ul{
     margin: 0.4em 0px;
 }
 
+.noSee{
+    display: none;
+}
+
 /************************
         Header
 ************************/
@@ -108,6 +115,10 @@ ul{
 .navbar{
     background-color: white;
     padding:0px 0.7em;
+    position: sticky;
+    top: 0;
+    left: 0;
+    box-shadow: -1.5px 10.5px 16px -9px #737070;
 }
 
 .nav{
@@ -278,6 +289,18 @@ ul{
 }
 
 /* Section-7 */
+
+.arrowBottom{
+    transition: 0.5s;
+}
+
+.question:hover .arrowBottom{
+    rotate: 180deg;
+}
+
+.question:hover p.noSee{
+    display: block;
+}
 
 /************************
         Footer
